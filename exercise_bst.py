@@ -1,15 +1,10 @@
 def is_search_tree(binary_tree):
     '''
-    This method takes in a binary tree where a Node has the form:
-
-    class Node:
-        def __init__(self, value):
-            self.value = value
-            self.left = None
-            self.right = None
-
-    and outputs a Boolean indicating whether or not it is a binary search tree.
-    Specifically, self.value > self.left* and self.value < self.right*
+    :param binary_tree: a Node with value, left, and right attributes,
+                        where left and right are None or Node
+    :return: a bool indicating whether or not it is a binary search tree;
+             i.e. values of all left nodes are less than a node's value
+             and values of all right nodes are greater than a node's value.
 
     e.g.
        _1_
@@ -20,8 +15,6 @@ def is_search_tree(binary_tree):
       /   \ - is a BST because 2 > 1 (left < value) and 2 < 3 (right < value)
      1    3
 
-    :param binary_tree
-    :return: Boolean
     '''
 
     # TODO Implement
