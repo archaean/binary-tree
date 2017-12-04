@@ -1,5 +1,9 @@
-Installation:
-$ pip install -r requirement.txt
+## Run Test Cases
 
-Run Test Cases:
-$ python testcases.py
+Assuming installation (below) is done:
+
+    $ python testcases.py
+
+## Installation
+
+    $ pip install -r requirement.txt
