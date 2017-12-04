@@ -1,6 +1,8 @@
+import unittest
+
 from binarytree import _build_tree, stringify
 from parameterized import parameterized
-import unittest
+
 from exercise_bst import is_search_tree
 
 
