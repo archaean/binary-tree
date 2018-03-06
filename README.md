@@ -5,14 +5,10 @@ Clone this repository on your local machine.
 Setup the associated Python virtual environment.
 
 ## 3. Run Test Cases
-Insecpt the code in `testcases.py` and run the test cases with the following command:
-
-    $ python testcases.py
+Inspect the code in `testcases.py` and run the test cases.
 
 ## 4. Implement Binary Search Tree Test Function
-Implement the `is_search_tree` function defined in `exercise_bst.py`.
-
-A successful implementation should see all three tests pass.
+Implement the `is_search_tree` function defined in `exercise_bst.py`.  A successful implementation should see all three tests pass.
 
 ## 5. Use a List Comprehension
 Replace the list of integers used to build the `Linear` binary tree test case with a list comprehension.
