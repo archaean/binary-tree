@@ -3,14 +3,14 @@
  */
 package bst;
 
-import static org.junit.Assert.assertEquals;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
 import java.util.Arrays;
 import java.util.Collection;
+
+import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
 public class TreeTest {
@@ -35,7 +35,7 @@ public class TreeTest {
 
     @Override
     public String toString() {
-        return "The tree \"" + this.name + "\" is" + (this.sorted ? " " : " not ") + "sorted. ";
+        return "The tree \"" + this.name + "\" is" + (this.sorted ? " " : " not ") + "sorted. \n" + BinaryTree.prettyPrint(this.root);
     }
 
     @Test
