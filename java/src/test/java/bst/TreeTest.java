@@ -38,7 +38,7 @@ public class TreeTest {
     @Override
     public String toString() {
         return "The tree \"" + this.name + "\" " +
-                "is" + (this.sorted ? " " : " not ") + "sorted. \n" + BinaryTree.prettyPrint(this.root);
+                "is" + (this.sorted ? " " : " not ") + "sorted. \n" + this.root;
     }
 
     @Test

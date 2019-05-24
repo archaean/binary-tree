@@ -20,6 +20,11 @@ class BinaryTree {
             left = null;
             right = null;
         }
+
+        @Override
+        public String toString() {
+            return String.join("\n", buildTreeString(this).content);
+        }
     }
 
     /**
@@ -53,16 +58,6 @@ class BinaryTree {
         }
 
         return nodes.get(0);
-    }
-
-    /**
-     * Gets the pretty-print string of a an entire binary tree.
-     *
-     * @param node Root node of the binary tree.
-     * @return the pretty-print string representing the entire binary tree
-     */
-    static String prettyPrint(Node node) {
-        return String.join("\n", buildTreeString(node).content);
     }
 
     /**
