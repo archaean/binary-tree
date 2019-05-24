@@ -5,10 +5,10 @@ Clone this repository onto your local machine.
 Use gradle to build the project.
 
 ## 3. Run Test Cases
-Inspect the code in [TreeTest.java](test/main/java/TreeTest.java) and run the test cases using gradle.
+Inspect the code in [TreeTest.java](src/test/java/bst/TreeTest.java) and run the test cases using gradle.
 
 ## 4. Implement a Binary Search Tree Test Function
-Implement the `isBinarySearchTree` function defined in [ExercisesBst.java](src/main/java/ExercisesBst.java).  
+Implement the `isBinarySearchTree` function defined in [ExerciseBst.java](src/main/java/bst/ExerciseBst.java).  
 A successful implementation should see all three tests pass.
 
 **Hint:** `node.toString()` gives you the pretty-print string for the binary tree `node` object
