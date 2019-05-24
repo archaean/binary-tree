@@ -20,14 +20,16 @@ public class TreeTest {
                 {"Linear", BinaryTree.build(new Integer[]{1, 2, 3, 4, 5, 6, 7}), false},
                 {"Sorted", BinaryTree.build(new Integer[]{4, 2, 6, 1, 3, 5, 7}), true},
                 {"Sortish", BinaryTree.build(new Integer[]{4, 2, 6, 1, 5, 3, 7}), false},
+                {"Sortish", BinaryTree.build(
+                        new String[]{"really", "fun", "time", "please", "act", null, "responsibly"}), false},
         });
     }
 
-    String name;
-    BinaryTree.Node root;
-    Boolean sorted;
+    private String name;
+    private BinaryTree.Node<Integer> root;
+    private Boolean sorted;
 
-    public TreeTest(String name, BinaryTree.Node root, Boolean sorted) {
+    public TreeTest(String name, BinaryTree.Node<Integer> root, Boolean sorted) {
         this.name = name;
         this.root = root;
         this.sorted = sorted;
@@ -35,7 +37,8 @@ public class TreeTest {
 
     @Override
     public String toString() {
-        return "The tree \"" + this.name + "\" is" + (this.sorted ? " " : " not ") + "sorted. \n" + BinaryTree.prettyPrint(this.root);
+        return "The tree \"" + this.name + "\" " +
+                "is" + (this.sorted ? " " : " not ") + "sorted. \n" + BinaryTree.prettyPrint(this.root);
     }
 
     @Test

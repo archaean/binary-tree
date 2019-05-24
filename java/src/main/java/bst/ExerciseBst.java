@@ -17,7 +17,7 @@ public class ExerciseBst {
      *       /   \ - is a BST because 2 > 1 (left < value) and 2 < 3 (right < value)
      *      1    3
      */
-    static Boolean isBinarySearchTree(BinaryTree.Node node) {
+    static <T extends Comparable> Boolean isBinarySearchTree(BinaryTree.Node<T> node) {
         // TODO Implement
         return true;
     }
