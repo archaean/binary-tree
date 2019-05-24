@@ -13,7 +13,7 @@ class BinaryTree {
      */
     static class Node<T> {
         T val;
-        Node left, right;
+        Node<T> left, right;
 
         Node(T val) {
             this.val = val;

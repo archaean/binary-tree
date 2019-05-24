@@ -20,8 +20,8 @@ public class TreeTest {
                 {"Linear", BinaryTree.build(new Integer[]{1, 2, 3, 4, 5, 6, 7}), false},
                 {"Sorted", BinaryTree.build(new Integer[]{4, 2, 6, 1, 3, 5, 7}), true},
                 {"Sortish", BinaryTree.build(new Integer[]{4, 2, 6, 1, 5, 3, 7}), false},
-                {"Sortish", BinaryTree.build(
-                        new String[]{"really", "fun", "time", "please", "act", null, "responsibly"}), false},
+//                {"Sortish", BinaryTree.build(
+//                        new String[]{"really", "fun", "time", "please", "act", null, "responsibly"}), false},
         });
     }
 
