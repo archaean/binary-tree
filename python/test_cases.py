@@ -1,8 +1,5 @@
-import unittest2 as unittest
-
+import pytest
 from binarytree import build
-from parameterized import parameterized
-
 from exercise_bst import is_search_tree
 
 
@@ -28,15 +25,6 @@ test_trees = [
 ]
 
 
-class TreesUnitTest(unittest.TestCase):
-
-    @parameterized.expand([(tt,) for tt in test_trees])
-    def test_if_search_tree(self, tt):
-        self.assertEqual(is_search_tree(tt.root), tt.root.is_bst, msg=tt)
-
-
-def main():
-    unittest.main(verbosity=2)
-
-if __name__ == "__main__":
-    main()
+@pytest.mark.parametrize("tt", test_trees)
+def test_if_search_tree(tt):
+    assert is_search_tree(tt.root) == tt.root.is_bst, f"Pretty Printed Tree: {tt}"
